@@ -1,5 +1,15 @@
 # JokeApp
 
+I like statistician jokes. Doesn't everyone?
+
+Quick and dirty project in Angular/Typescript. 
+
+Built first on plunker: http://plnkr.co/edit/msh9lW4F7Keu0nSwQA8U?p=preview
+
+Deployed here: http://imstillrad.com/jokes/
+
+Following tutorial from Angular 4 Theory to Practice.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
