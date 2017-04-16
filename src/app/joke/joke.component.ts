@@ -16,4 +16,10 @@ export class JokeComponent implements OnInit {
   ngOnInit() {
   }
 
+  deleteItem() {
+    // alert('delete pressed');
+    console.log('deleteItem called' + event);
+    this.jokeDeleted.emit(this.data);
+  }
+
 }
