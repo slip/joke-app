@@ -11,9 +11,40 @@ export class JokeComponent implements OnInit {
   @Input('joke') data: Joke;
   @Output() jokeDeleted = new EventEmitter<Joke>();
 
-  constructor() { }
+  constructor() {
+    console.log(`new - data is ${this.data}`);
+  }
+
+  ngOnChanges() {
+    console.log(`ngOnChanges - data is ${this.data}`);
+  }
 
   ngOnInit() {
+    console.log(`ngOnInit - data is ${this.data}`);
+  }
+
+  ngDoCheck() {
+    console.log(`ngDoCheck`);
+  }
+
+  ngAfterContentInit() {
+    console.log(`ngAfterContentInit`);
+  }
+
+  ngAfterContentChecked() {
+    console.log(`ngAfterContentChecked`);
+  }
+
+  ngAfterViewInit() {
+    console.log(`ngAfterViewInit`);
+  }
+
+  ngAfterViewChecked() {
+    console.log(`ngAfterViewChecked`);
+  }
+
+  ngOnDestroy() {
+    console.log(`ngOnDestroy`);
   }
 
   deleteItem() {
